@@ -1,0 +1,48 @@
+{
+    "name": "test6034/guzzlehttp6-test",
+    "type": "library",
+    "description": "HTTP client library",
+    "keywords": [
+        "test"
+    ],
+    "homepage": "http://github.com/nabinem",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Test Test",
+            "email": "test@gmail.com",
+            "homepage": "https://github.com/nabinem"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "ext-json": "*",
+        "guzzlehttp/promises": "^1.0",
+        "guzzlehttp/psr7": "^1.6.1"
+    },
+    "require-dev": {
+        "ext-curl": "*",
+        "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+        "psr/log": "^1.1"
+    },
+    "suggest": {
+        "psr/log": "Required for using the Log middleware",
+        "ext-intl": "Required for Internationalized Domain Name (IDN) support"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "6.5-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "GuzzleHttp6\\": "src/"
+        },
+        "files": [
+            "src/functions_include.php"
+        ]
+    }
+}
